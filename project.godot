@@ -11,8 +11,17 @@ config_version=5
 [application]
 
 config/name="IFCal"
+run/main_scene="uid://tc87djf60dpq"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+IFC="*res://addons/international_fixed_calendar/ifc_autoload.gd"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/international_fixed_calendar/plugin.cfg")
 
 [rendering]
 
